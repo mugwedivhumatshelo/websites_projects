@@ -6,6 +6,7 @@
     <title>Future IT Solutions</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel=icon href="icon4.png"/>
     <style>
         /* styles.css */
 /* Reset default styles */
@@ -103,7 +104,7 @@ img{
 }
 /* info section styles */
 .info {
-    background-image: url("back.jpg"); /* Change according to you image path */
+    background-image: url("b"); /* Change according to you image path */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -192,17 +193,17 @@ footer {
                 
                 <div id="mySidenav" class="sidenav">
                     <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Contact</a></li> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Learn">AboutUs</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
                   </div>
                   <div id="main">
                     <span style="font-size:30px;cursor:pointer; color: #111111" onclick="openNav()">&#9776; Menu</span>
                   </div>
             </ul>
         </div>
-        <img src="my logo.png">
+        <img src="img/my logo.png">
         <nav>
             <ul>
                 <li><a href="login.html"><i class="fas fa-user" style="font-size: 24px;"></i> Login</a></li>
@@ -213,22 +214,360 @@ footer {
     </header>
 
     <main>
-        <section class="info">
-            <div class="info">
-                <h1 style="color: rgb(37, 34, 34);">Welcome to Future IT Solutions</h1>
-                <p style="color: black;">Discover our latest services.</p>
-                <a href="explore.html" class="btn">Explore Now</a>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
 
-            </div>
-        </section>
+* {
+  box-sizing: border-box;
+}
 
-        <section class="about">
-            <div class="about-content">
-                <h2>About Future IT Solutions</h2>
-                <p>About here</p>
-                <a href="Learn.html" class="btn btn-secondary">Learn More</a>
-            </div>
-        </section>
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">Gallery</h2>
+
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/111.png">
+      <img src="img/111.png" alt="poster" width="1200" height="1200">
+    </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/2.png">
+      <img src="img/2.png" alt="poster" width="1080" height="1080">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/1.jpg">
+      <img src="img/1.jpg" alt="laptop" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/3.jpg">
+      <img src="img/3.jpg" alt="broken laptop" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/4.jpg">
+      <img src="img/4.jpg" alt="broken laptop" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/5.jpg">
+      <img src="img/5.jpg" alt="broken laptop" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/6.jpg">
+      <img src="img/6.jpg" alt="troubleshoot" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/7.jpg">
+      <img src="img/7.jpg" alt="broken laptop hinge" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/8.jpg">
+      <img src="img/8.jpg" alt="HDD" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/9.jpg">
+      <img src="img/9.jpg" alt="laptop" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/10.jpg">
+      <img src="img/10.jpg" alt="laptop cover" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/11.jpg">
+      <img src="img/11.jpg" alt="laptop motherboard" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/12.jpg">
+      <img src="img/12.jpg" alt="broken laptop hinge" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/13.jpg">
+      <img src="img/13.jpg" alt="RAM" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/14.jpg">
+      <img src="img/14.jpg" alt="boot" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/15.jpg">
+      <img src="img/15.jpg" alt="laptop board" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/16.jpg">
+      <img src="img/16.jpg" alt="no boot device" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/17.jpg">
+      <img src="img/17.jpg" alt="laptop fan" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/18.jpg">
+      <img src="img/18.jpg" alt="app not found" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/19.jpg">
+      <img src="img/19.jpg" alt="ms office" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/20.jpg">
+      <img src="img/20.jpg" alt="m.2 ssd" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
 
         <!-- Add more sections as needed for different content -->
     </main>
@@ -239,10 +578,12 @@ footer {
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="terms.html">Terms of Service</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="tel:+27723386439" class="btn">Call Us!</a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=0723386439" class="btn">Whatsapp</a></li> 
-                <li><a href="https://www.facebook.com/groups/374914741173481" class="btn">Facebook</a></li>
-                <li><a href="https://www.youtube.com/channel/UC19Yvp1RCWXL54iKGkfM1oQ" class="btn">Youtube</a></li>
+                <h1>follow us!</h1>
+				<li><a href="https://www.twitter.com/FutureITSolutns"><i class='fab fa-twitter-square' style='font-size:24px;color:#1DA1F2'></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=0723386439"><i class='fab fa-whatsapp-square' style='font-size:24px;color:#128C7E'"></i></a></li> 
+				<li><a href="https://www.linkedin.com/in/vhumatshelo-mugwedi-9540631a4"><i class='fab fa-linkedin' style='font-size:24px;color:#0A66C2'></i></a></li>
+                <li><a href="https://www.facebook.com/groups/374914741173481"><i class='fab fa-facebook-square' style='font-size:24px;color:#4267B2'></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC19Yvp1RCWXL54iKGkfM1oQ"><i class='fab fa-youtube' style='font-size:26px;color:#FF0000'></i></a></li>
             </ul>
             <p>&copy; 2023 Future IT Solutions. All rights reserved.</p>
         </div>

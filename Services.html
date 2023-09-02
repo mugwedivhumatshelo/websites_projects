@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future IT Solutions</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel=icon href="icon4.png"/>
+    <style>
+        /* styles.css */
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* Header styles */
+header {
+    background-color: hsla(0, 0%, 100%, 0.801);
+    padding: 0px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically within a header */
+    justify-content: space-between; /* Push items to left and right edges */
+}
+/* Additional styles for moving items to top left corner */
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+.left-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav {
+    text-align: left;
+    padding-left: 30px; /* Add some left padding to nav element */
+}
+nav ul {
+    list-style: none;
+    display: flex; /* Use flexbox for layout */
+}
+nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+nav a {
+    text-decoration: none;
+    color: #070707;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #e42f2fde;
+}
+/*side navigation*/
+.sidenav {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #111;
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 10px;
+}
+.sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+}
+
+.sidenav a:hover {
+   color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+}
+/* logo image section styles */
+img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    position: center;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+/* info section styles */
+.info {
+    background-image: url("img/back.jpg"); /* Change according to you image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+.info-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.info h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.info p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.btn {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #10130f8c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+}
+.btn:hover {
+    background-color: #e61414cc;
+}
+/* About section styles */
+.about {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: auto;
+}
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.btn-secondary {
+    background-color: #555;
+ }
+.btn-secondary:hover {
+    background-color: #333;
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+.footer-content ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-content li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-content p {
+    font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    
+    <header style="margin-bottom: 20px;">
+        <div class="left-nav">
+
+            <ul>
+                
+                <div id="mySidenav" class="sidenav">
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Learn.html">AboutUs</a></li>
+                    <li><a href="Contact.html">Contact</a></li> 
+                  </div>
+                  <div id="main">
+                    <span style="font-size:30px;cursor:pointer; color: #111111" onclick="openNav()">&#9776; Menu</span>
+                  </div>
+            </ul>
+        </div>
+        <img src="img/my logo.png">
+        <nav>
+            <ul>
+                <li><a href="login.html"><i class="fas fa-user" style="font-size: 24px;"></i> Login</a></li>
+                <li><a href="register.html"><i class="fas fa-user-plus" style="font-size: 24px;"></i> Register</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="about">
+            <div class="about-content">
+                <h2>Our Services</h2>
+                <br><p>1. Computer Repair and Support Services:<br>
+
+Computer Troubleshooting and Diagnosis: We provide expert diagnosis and<br>
+ troubleshooting for all your computer issues, from hardware problems to software<br>
+ glitches. Our technicians are skilled at identifying and resolving issues quickly to
+ minimize downtime.<br>
+
+Hardware Repair and Upgrades: Future IT Solutions offers comprehensive hardware<br>
+ repair and upgrade services. Whether you need a broken screen replaced, a hard drive<br>
+ upgraded, or more RAM installed, we've got you covered.<br>
+
+Virus and Malware Removal: Protect your computer and data from harmful viruses and<br>
+ malware with our thorough virus removal services. We'll clean your system and help you<br>
+ implement security measures to prevent future infections.<br>
+
+Data Recovery: In the event of data loss due to hardware failure or accidental deletion,<br>
+ our experts can assist in recovering your valuable data. We employ advanced<br>
+ techniques to retrieve lost files and ensure your data remains intact.<br>
+
+Software Installation and Configuration: Get your software up and running smoothly<br>
+ with our software installation and configuration services. We'll install and configure<br>
+ applications, drivers, and updates, ensuring optimal performance.<br>
+
+Network Setup and Maintenance: Future IT Solutions can set up and maintain your<br>
+ home or office network, ensuring fast and reliable internet connectivity. We'll also<br>
+ troubleshoot network issues and optimize your network for peak performance.<br>
+
+<br>2. Graphic Design Services:<br>
+
+Logo Design: Make a lasting impression with a professionally designed logo that<br>
+ represents your brand's identity. Our creative designers will work closely with you to<br>
+ create a unique and memorable logo.<br>
+
+Marketing Collateral: We design a wide range of marketing materials, including<br>
+ brochures, flyers, posters, and business cards. Our designs are tailored to your specific<br>
+ goals and target audience.<br>
+
+Web Graphics: Enhance your online presence with eye-catching web graphics. We<br>
+ design website banners, icons, buttons, and other web elements that captivate visitors<br>
+ and improve user experience.<br>
+
+Branding and Identity: Establish a strong and consistent brand identity with our<br>
+ branding services. We'll help you define your brand's personality, create brand <br>
+ guidelines, and develop a cohesive visual identity.<br>
+
+Print Design: From banners and signage to product packaging and promotional<br>
+ materials, we design print materials that grab attention and convey your message<br>
+ effectively.<br>
+
+<br>3. Printing Services:<br>
+
+High-Quality Printing: Future IT Solutions offers high-quality printing services for all<br>
+ your marketing and promotional materials. We use state-of-the-art equipment and<br>
+ premium materials to ensure your printed items stand out.<br>
+
+Custom Printing: Whether you need business cards, brochures, posters, or banners, we <br>
+provide customizable printing solutions to meet your unique needs. Choose from a<br>
+ variety of sizes, finishes, and paper options.<br>
+
+Fast Turnaround: We understand the importance of deadlines. Our printing services<br>
+ come with fast turnaround times to ensure you receive your printed materials when you<br>
+ need them.<br>
+
+Bulk Printing: For larger quantities, we offer competitive pricing on bulk printing orders.<br>
+Whether you're promoting an event or restocking your marketing materials, we can<br>
+ accommodate your volume needs.<br>
+
+Shipping and Delivery: We can arrange for the convenient shipping and delivery of your<br>
+ printed materials to your location, saving you time and hassle.<br>
+
+<br>By offering these comprehensive computer repair and support, graphic design, and printing<br>
+ services, Future IT Solutions is committed to helping businesses and individuals succeed in<br>
+ the digital and print worlds.<br></p>
+            </div>
+        </section>
+
+        <!-- Add more sections as needed for different content -->
+    </main>
+<!-- Footer content here -->
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <h1>follow us!</h1>
+				<li><a href="https://www.twitter.com/FutureITSolutns"><i class='fab fa-twitter-square' style='font-size:24px;color:#1DA1F2'></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=0723386439"><i class='fab fa-whatsapp-square' style='font-size:24px;color:#128C7E'"></i></a></li> 
+				<li><a href="https://www.linkedin.com/in/vhumatshelo-mugwedi-9540631a4"><i class='fab fa-linkedin' style='font-size:24px;color:#0A66C2'></i></a></li>
+                <li><a href="https://www.facebook.com/groups/374914741173481"><i class='fab fa-facebook-square' style='font-size:24px;color:#4267B2'></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC19Yvp1RCWXL54iKGkfM1oQ"><i class='fab fa-youtube' style='font-size:26px;color:#FF0000'></i></a></li>
+            </ul>
+            <p>&copy; 2023 Future IT Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+<!-- script for sidenavigation -->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+</body>
+</html>
