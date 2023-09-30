@@ -105,7 +105,7 @@ img{
 }
 /* info section styles */
 .info {
-    background-color: #1c87c9; /* Change according to you image path */
+    background-image: url("img/back.jpg"); /* Change according to you image path */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -208,28 +208,22 @@ footer {
     </header>
 
     <main>
-        <section class="info">
-            <div class="info">
-			  
-                <h1 style="color: black;">Welcome to Futuree I.T SolutionS</h1>
-                <p style="color: black;">Discover our services.</p>
-                <a href="vidio.html" class="btn">Explore Now</a>
-
-            </div>
-        </section>
-
         <section class="about">
             <div class="about-content">
-                <h2>About Futuree I.T Solutions</h2>
-                <p>At Futuree I.T Solutions, we are your trusted partner for all things technology and design.<br>
-				Established with a passion for innovation and a commitment to excellence,<br>
-				we have been serving individuals and businesses since 01 January 2021.<br></p>
-                <a href="Learn.html" class="btn btn-secondary">Learn More</a>
+                
+                <a href="video.html" class="btn btn-secondary">VIDEOS</a>
+				<a href="explore.html" class="btn btn-secondary">IMAGES</a>
             </div>
         </section>
 
         <!-- Add more sections as needed for different content -->
 		
+		<video width="1280" height="720" autoplay muted>
+          <source src="vid/video.mp4" type="video/mp4">
+          <source src="vid/video.ogg" type="video/ogg">
+           Your browser does not support the video tag.
+         </video>
+		 
     </main>
 <!-- Footer content here -->
     <footer>
@@ -262,6 +256,3 @@ footer {
           document.getElementById("main").style.marginLeft= "0";
         }
         </script>
-
-</body>
-</html>

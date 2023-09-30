@@ -25,7 +25,6 @@ header {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically within a header */
     justify-content: space-between; /* Push items to left and right edges */
-	z-index: 1;
 }
 /* Additional styles for moving items to top left corner */
 .left-nav {
@@ -94,7 +93,7 @@ nav a:hover {
 }
 /* logo image section styles */
 img{
-    float: center;
+    float: Center;
     width: 100px;
     height: 100px;
     position: center;
@@ -105,7 +104,7 @@ img{
 }
 /* info section styles */
 .info {
-    background-color: #1c87c9; /* Change according to you image path */
+    background-image: url("b"); /* Change according to you image path */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -194,9 +193,10 @@ footer {
                 
                 <div id="mySidenav" class="sidenav">
                     <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="Services.html">Services</a></li>
-                    <li><a href="Learn.html">AboutUs</a></li>
-                    <li><a href="Contact.html">Contact</a></li> 
+                    <li><a href="Learn">AboutUs</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
                   </div>
                   <div id="main">
                     <span style="font-size:30px;cursor:pointer; color: #111111" onclick="openNav()">&#9776; Menu</span>
@@ -208,28 +208,227 @@ footer {
     </header>
 
     <main>
-        <section class="info">
-            <div class="info">
-			  
-                <h1 style="color: black;">Welcome to Futuree I.T SolutionS</h1>
-                <p style="color: black;">Discover our services.</p>
-                <a href="vidio.html" class="btn">Explore Now</a>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
 
-            </div>
-        </section>
+* {
+  box-sizing: border-box;
+}
 
-        <section class="about">
-            <div class="about-content">
-                <h2>About Futuree I.T Solutions</h2>
-                <p>At Futuree I.T Solutions, we are your trusted partner for all things technology and design.<br>
-				Established with a passion for innovation and a commitment to excellence,<br>
-				we have been serving individuals and businesses since 01 January 2021.<br></p>
-                <a href="Learn.html" class="btn btn-secondary">Learn More</a>
-            </div>
-        </section>
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">VIDEOS</h2>
+
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<video width="320" height="240" controls>
+  <source src="vid/movie.mp4" type="video/mp4">
+  <source src="vid/movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" controls>
+  <source src="vid/movie1.mp4" type="video/mp4">
+  <source src="vid/movie1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" controls>
+  <source src="vid/movie2.mp4" type="video/mp4">
+  <source src="vid/movie2.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" controls>
+  <source src="vid/movie3.mp4" type="video/mp4">
+  <source src="vid/movie3.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" controls>
+  <source src="vid/movie4.mp4" type="video/mp4">
+  <source src="vid/movie4.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" controls>
+  <source src="vid/movie5.mp4" type="video/mp4">
+  <source src="vid/movie5.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
 
         <!-- Add more sections as needed for different content -->
-		
     </main>
 <!-- Footer content here -->
     <footer>
@@ -238,13 +437,13 @@ footer {
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="terms.html">Terms of Service</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-				<h1>follow us!</h1>
+                <h1>follow us!</h1>
 				<li><a href="https://www.twitter.com/FutureeITSoltns"><i class='fab fa-twitter-square' style='font-size:24px;color:#1DA1F2'></i></a></li>
                 <li><a href="https://api.whatsapp.com/send?phone=0723386439"><i class='fab fa-whatsapp-square' style='font-size:24px;color:#128C7E'"></i></a></li> 
 				<li><a href="https://www.linkedin.com/in/vhumatshelo-mugwedi-9540631a4"><i class='fab fa-linkedin' style='font-size:24px;color:#0A66C2'></i></a></li>
                 <li><a href="https://www.facebook.com/FutureeI.Tsolutions2021"><i class='fab fa-facebook-square' style='font-size:24px;color:#4267B2'></i></a></li>
-				<li><a href="https://www.instagram.com/futureei.tsolutions/"><i class='fab fa-instagram-square' style='font-size:24px;color:#FCAF45'></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UC19Yvp1RCWXL54iKGkfM1oQ"><i class='fab fa-youtube' style='font-size:26px;color:#FF0000'></i></a></li>
+                <li><a href="https://www.instagram.com/futureei.tsolutions/"><i class='fab fa-instagram-square' style='font-size:24px;color:#FCAF45'></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UC19Yvp1RCWXL54iKGkfM1oQ"><i class='fab fa-youtube' style='font-size:26px;color:#FF0000'></i></a></li>
             </ul>
             <p>&copy; 2023 Futuree I.T Solutions. All rights reserved.</p>
         </div>
